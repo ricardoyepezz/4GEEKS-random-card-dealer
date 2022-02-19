@@ -1,1 +1,15 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background: green;
+}
+
+.card {
+  height: 400px;
+  width: 250px;
+  font-size: 40px;
+  border-radius: 15px;
+}
+
+#randomEmojiTwo {
+  transform: rotate(180deg);
+}

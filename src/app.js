@@ -6,6 +6,44 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
+  //Array de elementos-----------------------------------------
+  let emojis = ["♦", "♥", "♠", "♣"];
+  let values = [
+    "A",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "J",
+    "Q",
+    "K"
+  ];
+
+  //Funciones random-----------------------------------------
+
+  let randomFunctionNumber = Math.floor(Math.random() * 12);
+  let randomFunctionEmoji = Math.floor(Math.random() * 4);
+
+  //Generación aleatoria de elementos-------------------------
+
+  let randomValues = values[randomFunctionNumber];
+  let randomEmoji = emojis[randomFunctionEmoji];
+
+  // busca elemento con ese ID ----------sustituye--- por esto (var randomNumber)
+  document.querySelector("#randomNumber").innerHTML = randomValues;
+  document.querySelector("#randomEmoji").innerHTML = randomEmoji;
+  document.querySelector("#randomEmojiTwo").innerHTML = randomEmoji;
+
+  //falta color red
+
+  /* if (randomEmoji == 0 || randomEmoji == 1) {
+    let elementFirst = document.querySelector("#randomNumber");
+    elementFirst.style.color = "red";
+    console.log(values[randomFunctionNumber]);
+  } */
 };
