@@ -38,12 +38,16 @@ window.onload = function() {
   document.querySelector("#randomNumber").innerHTML = randomValues;
   document.querySelector("#randomEmoji").innerHTML = randomEmoji;
   document.querySelector("#randomEmojiTwo").innerHTML = randomEmoji;
-  console.log(randomFunctionEmoji);
-  //falta color red
+
+  //condición para cambiar clases a elementos
 
   if (randomFunctionEmoji == 0 || randomFunctionEmoji == 1) {
-    console.log("done");
     let elementFirst = document.querySelector("#randomNumber");
+    let elementSecond = document.querySelector("#randomEmoji");
+    let elementThird = document.querySelector("#randomEmojiTwo");
+
     elementFirst.style.color = "red";
+    elementSecond.style.color = "red";
+    elementThird.style.color = "red";
   }
 };
