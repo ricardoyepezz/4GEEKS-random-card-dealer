@@ -38,12 +38,12 @@ window.onload = function() {
   document.querySelector("#randomNumber").innerHTML = randomValues;
   document.querySelector("#randomEmoji").innerHTML = randomEmoji;
   document.querySelector("#randomEmojiTwo").innerHTML = randomEmoji;
-
+  console.log(randomFunctionEmoji);
   //falta color red
 
-  /* if (randomEmoji == 0 || randomEmoji == 1) {
+  if (randomFunctionEmoji == 0 || randomFunctionEmoji == 1) {
+    console.log("done");
     let elementFirst = document.querySelector("#randomNumber");
     elementFirst.style.color = "red";
-    console.log(values[randomFunctionNumber]);
-  } */
+  }
 };
